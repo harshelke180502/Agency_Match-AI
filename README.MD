@@ -2,7 +2,7 @@
 
 An AI-powered screening tool for US marketing agencies. Describe the agency you need in plain English; Claude scores 31 curated agencies against your brief and explains every match.
 
-Built as a take-home assignment to evaluate the ability to ship an AI-powered tool that a non-technical user can drive end-to-end.
+Built to evaluate the ability to ship an AI-powered tool that a non-technical user can drive end-to-end.
 
 ---
 
@@ -377,7 +377,3 @@ Possible future wins:
 - SQLite is fine at this scale; for >1000 agencies switch to Postgres.
 - Sector / location filtering currently happens through the LLM's interpretation of criteria rather than at the SQL layer. With only 31 candidates this is a no-op; at scale, pre-filtering would reduce LLM cost.
 - The `SubScores.size_fit` defaults to 75 when no buyer preference is specified. Same for `location_fit` when location is "any US."
-
----
-
-Built for the Agency Match AI take-home assignment, May 2026.
